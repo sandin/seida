@@ -81,6 +81,9 @@ x = claripy.BVS('x', 8 * 8)  # symbolic heap memory
 simulation.active[0].memory.store(0x00102c98, x, size=8)
 ```
 
+> NOTE: For more information symbolic execution, please go to [angr](https://github.com/angr/angr).
+
+
 and load this script:
 
 ```python
