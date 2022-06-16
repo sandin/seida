@@ -42,8 +42,8 @@ When the plugin is installed, the following buttons will be added to the IDA too
 
 In addition to these buttons, Seida also provide some python commands, You can use them in IDA's Python console.
 
+## Dump memory
 
-dump memory:
 ```python
 $ seida.dump_memory(addr, size)
 7fffffffffed870  f8 ff ff ff ff ff ff ff  ff ff ff ff 00 00 00 00  |................|
@@ -54,19 +54,37 @@ $ seida.dump_memory(addr, size)
 7fffffffffed8c0
 ```
 
-change register:
+​            
+
+## Set register
+
 ```python
 $ seida.set_reg(reg_name, val)
 ```
 
-hook function:
+​           
+
+## Hook function
+
 ```python
 $ seida.hook_func(func_addr)
 ```
 
-run any script:
+​            
+
+## Run any script
+
+Write a python script:
+
+```python
+x = claripy.BVS('x', 8 * 8)
+simulation.active[0].memory.store(0x00102c98, x1_mem, size=8)
+```
+
+and load this script:
 
 ```python
 $ seida.do_file(py_file_path)
 ```
+
 
