@@ -77,8 +77,8 @@ $ seida.hook_func(func_addr)
 Write a python script:
 
 ```python
-x = claripy.BVS('x', 8 * 8)
-simulation.active[0].memory.store(0x00102c98, x1_mem, size=8)
+x = claripy.BVS('x', 8 * 8)  # symbolic heap emory
+simulation.active[0].memory.store(0x00102c98, x, size=8)
 ```
 
 and load this script:
