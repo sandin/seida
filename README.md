@@ -2,7 +2,7 @@
 
 **Seida** is a **S**ymbolic **E**xecution plugin for **IDA**.
 
-Seida is C/S architecture:
+**Seida** is C/S architecture:
 * the **server** is responsible for providing the symbolic execution of the simulation environment.
 * the **client** as IDA plugin.
 
@@ -40,9 +40,9 @@ When the plugin is installed, the following buttons will be added to the IDA too
 
 # Command
 
-In addition to these buttons, Seida also provide some python commands, You can use them in IDA's Python console.
+In addition to these buttons, **Seida** also provide some python commands, you can use them in IDA's Python console.
 
-## Dump memory
+## Dump Memory
 
 ```python
 $ seida.dump_memory(addr, size)
@@ -56,7 +56,7 @@ $ seida.dump_memory(addr, size)
 
 ​            
 
-## Set register
+## Set Register
 
 ```python
 $ seida.set_reg(reg_name, val)
@@ -64,7 +64,7 @@ $ seida.set_reg(reg_name, val)
 
 ​           
 
-## Hook function
+## Hook Function
 
 ```python
 $ seida.hook_func(func_addr)
@@ -72,7 +72,7 @@ $ seida.hook_func(func_addr)
 
 ​            
 
-## Run any script
+## Run Any Script
 
 Write a python script:
 
