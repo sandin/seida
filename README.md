@@ -46,6 +46,12 @@ In addition to these buttons, Seida also provide some python commands, You can u
 dump memory:
 ```python
 $ seida.dump_memory(addr, size)
+7fffffffffed870  f8 ff ff ff ff ff ff ff  ff ff ff ff 00 00 00 00  |................|
+7fffffffffed880  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+7fffffffffed890  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+7fffffffffed8a0  e8 ff ff ff ff ff ff ff  00 00 00 00 00 00 00 00  |................|
+7fffffffffed8b0  f0 ff fe ff ff ff ff 07  4c 1b f2 00 00 00 00 00  |........L.......|
+7fffffffffed8c0
 ```
 
 change register:
