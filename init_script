@@ -1,0 +1,6 @@
+import pickle
+
+filename = "project.dat"
+with open(filename, "rb") as fp:
+    project = pickle.load(fp)
+print(project.arch)
