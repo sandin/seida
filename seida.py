@@ -6,7 +6,7 @@ import idautils
 import idc
 
 SEIDA_USE_AS_SCRIPT = True
-SEIDA_SERVER_ADDR = "http://10.211.55.2:50052"  # TODO
+SEIDA_SERVER_ADDR = "http://10.37.129.2:50052"  # TODO
 
 seida = None  # global export API
 START_EXEC_ACTION_NAME = "execution:start_exec"

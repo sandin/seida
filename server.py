@@ -58,11 +58,13 @@ def loop():
 
 def main():
     init_script_file = sys.argv[1] if len(sys.argv) > 1 else None
+    run_server(init_script_file)
+    """
     server = threading.Thread(target=run_server, args=(init_script_file,))
     server.start()
     time.sleep(1)
     loop()
-
+    """
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)

@@ -22,7 +22,7 @@ $ pip install angr
 
 then we can start **Seida Server** inside venv: 
 ```bash
-$ python server.py
+$ python server.py init_script
 SEIDA_SERVER_ADDR = "http://0.0.0.0:50052"
 > 
 ```
